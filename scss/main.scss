@@ -60,3 +60,21 @@ p {
 .equal-height .card-body {
   flex: 1;
 }
+
+// les instructor de images
+
+.instructor-img {
+  width: 250px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px !important;
+}
+
+/* Style pour les etoiles */
+.stars {
+  font-size: 1rem; /* Adjusted to make stars smaller */
+}
+
+.stars i {
+  margin: 0 2px;
+}

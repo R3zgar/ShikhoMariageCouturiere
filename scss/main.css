@@ -12020,4 +12020,21 @@ p {
 
 .equal-height .card-body {
   flex: 1;
+}
+
+.instructor-img {
+  width: 250px;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px !important;
+}
+
+/* Style pour les etoiles */
+.stars {
+  font-size: 1rem; /* Adjusted to make stars smaller */
+}
+
+.stars i {
+  margin: 0 2px;
 }/*# sourceMappingURL=main.css.map */
