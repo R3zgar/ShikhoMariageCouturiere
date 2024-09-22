@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -32,14 +31,14 @@
       shikho mariage couturiere | découvrez les plus belles robes de mariage
     </title>
   </head>
-  <body>
+  <body class="wrapper">
     <!-- NAVBAR-->
     <header>
       <nav
         class="navbar navbar-expand-lg bg-primary navbar-light py-3 fixed-top"
       >
         <div class="container">
-          <a href="/" class="navbar-brand"
+          <a class="navbar-brand" href="/"
             >SHIKHO MARIAGE <br />
             COUTURIERE</a
           >
@@ -56,19 +55,19 @@
           <div class="collapse navbar-collapse" id="navmenu">
             <ul class="navbar-nav ms-auto">
               <li class="navbar-item">
-                <a href="/" class="nav-link">accueil</a>
+                <a class="nav-link" href="/">accueil</a>
               </li>
               <li class="navbar-item">
-                <a href="#propose" class="nav-link">à propose</a>
+                <a class="nav-link" href="#propose">à propose</a>
               </li>
               <li class="navbar-item">
-                <a href="/galerie" class="nav-link">galerie</a>
+                <a class="nav-link" href="/galerie">galerie</a>
               </li>
               <li class="navbar-item">
-                <a href="#services" class="nav-link">services</a>
+                <a class="nav-link" href="#services">services</a>
               </li>
               <li class="navbar-item">
-                <a href="#contact" class="nav-link">contact</a>
+                <a class="nav-link" href="#contact">contact</a>
               </li>
             </ul>
           </div>
@@ -76,6 +75,9 @@
       </nav>
     </header>
 
+    <main class="content" id="main-page">
+      <!-- Le contenu de la page sera injectée ici -->
+    </main>
     <!-- Modal -->
     <div
       class="modal fade"
@@ -132,13 +134,9 @@
       </div>
     </div>
 
-    <main id="main-page">
-      <!-- Le contenu de la page sera injectée ici -->
-    </main>
-
     <!-- CONTACT & MAP -->
 
-    <section class="p-5">
+    <section class="p-4" id="contact-section">
       <div class="container">
         <div class="row g-4">
           <div class="col-md">
@@ -177,6 +175,7 @@
         </div>
       </div>
     </section>
+
     <!--     <footer
       class="footer text-white text-center footer"
       style="background-color: #FAF3F3"

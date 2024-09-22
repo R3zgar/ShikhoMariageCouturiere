@@ -11972,13 +11972,46 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Assurez-vous que le wrapper remplit la fenêtre */
+}
+
+header {
+  position: fixed; /* Fixe le menu en haut de la page */
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* S'assurer qu'il soit au-dessus du contenu */
+}
+
+.content {
+  flex: 1; /* Permet au contenu de prendre l'espace disponible */
+  padding-top: 60px; /* Évite que le contenu soit masqué sous le menu */
+}
+
+footer {
+  padding: 15px;
+  width: 100%;
+  background-color: #f8f9fa; /* Couleur de fond pour le footer */
+  text-align: center; /* Centrer le texte */
+  margin-top: auto; /* Assure que le footer soit en bas de la page */
+  position: relative; /* Cela peut être nécessaire selon votre structure */
+}
+
 html {
   position: relative;
   min-height: 100%;
 }
 
 main {
-  margin-bottom: 250px;
+  margin-bottom: 150px;
 }
 
 footer.footer {
@@ -12037,4 +12070,35 @@ p {
 
 .stars i {
   margin: 0 2px;
+}
+
+.questions-section {
+  margin-bottom: 10px; /* Ajustez cette valeur selon le besoin */
+}
+
+#contact-section {
+  margin-top: 10px; /* Ajustez cette valeur pour réduire l'espace */
+  margin-bottom: 20px; /* Ajustez si nécessaire */
+}
+
+/* Styles pour le image de galery */
+.image-card {
+  position: relative;
+}
+.image-card:hover .titre-image {
+  opacity: 1;
+}
+.image-card:hover img {
+  filter: brightness(0.3);
+}
+.image-card img {
+  transition: all 0.3s;
+}
+.image-card .titre-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.3s;
 }/*# sourceMappingURL=main.css.map */
