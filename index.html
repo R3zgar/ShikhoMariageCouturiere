@@ -78,6 +78,7 @@
     <main class="content" id="main-page">
       <!-- Le contenu de la page sera injectée ici -->
     </main>
+
     <!-- Modal -->
     <div
       class="modal fade"
@@ -89,7 +90,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="enrollLabel">contactez-nous</h1>
+            <h2 class="modal-title fs-5" id="enrollLabel">Contactez-Nous</h2>
             <button
               type="button"
               class="btn-close"
@@ -99,24 +100,58 @@
           </div>
           <div class="modal-body">
             <p class="lead">
-              Remplissez ce formulaire et nous vous recontacterons🤲
+              Complétez ce formulaire et nous reviendrons vers vous rapidement.
             </p>
             <form>
-              <div class="mb-3">
-                <label for="first-name" class="col-form-label">prénom : </label>
-                <input type="text" class="form-control" id="first-name" />
+              <div class="mb-2">
+                <label for="last-name" class="col-form-label">Nom : </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="last-name"
+                  placeholder="DUPONT"
+                />
               </div>
-              <div class="mb-3">
-                <label for="last-name" class="col-form-label">nom : </label>
-                <input type="text" class="form-control" id="last-name" />
+
+              <div class="mb-2">
+                <label for="first-name" class="col-form-label">Prénom : </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="first-name"
+                  placeholder="Emma"
+                />
               </div>
-              <div class="mb-3">
-                <label for="email" class="col-form-label">e-mail : </label>
-                <input type="email" class="form-control" id="email" />
+
+              <div class="mb-2">
+                <label for="email" class="col-form-label">Email : </label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="emma-dupont@gmail.com"
+                />
               </div>
-              <div class="mb-3">
-                <label for="phone" class="col-form-label">téléphone : </label>
-                <input type="tel" class="form-control" id="phone" />
+              <div class="mb-2">
+                <label for="phone" class="col-form-label">Téléphone : </label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="phone"
+                  placeholder="07 12 34 56 78"
+                />
+              </div>
+
+              <div class="form-group mb-3">
+                <label for="message-text" class="col-form-label"
+                  >Message :</label
+                >
+                <textarea
+                  class="form-control form-control-lg"
+                  id="message-text"
+                  placeholder="Veuillez entrer votre message ici"
+                  rows="5"
+                ></textarea>
               </div>
             </form>
           </div>
@@ -126,9 +161,9 @@
               class="btn btn-secondary"
               data-bs-dismiss="modal"
             >
-              fermer
+              Fermer
             </button>
-            <button type="button" class="btn btn-primary">soumettre</button>
+            <button type="button" class="btn btn-primary">Soumettre</button>
           </div>
         </div>
       </div>
@@ -136,24 +171,24 @@
 
     <!-- CONTACT & MAP -->
 
-    <section class="p-4" id="contact-section">
+    <section class="p-3" id="contact-section">
       <div class="container">
         <div class="row g-4">
           <div class="col-md">
-            <h2 class="text-center mb-4">coordonnées</h2>
+            <h3 class="text-center mb-3">Coordonnées</h3>
             <ul class="list-group list-group-flush lead">
               <li class="list-group-item">
-                <span class="fw-bold">emplacement principal : </span> 13
+                <span class="fw-bold">Emplacement principal : </span> 13
                 boulevard de la république - Agen(47000)
               </li>
               <li class="list-group-item">
-                <span class="fw-bold">téléphone : </span> +33 (0) 7 58 80 94 72
+                <span class="fw-bold">Téléphone : </span> +33 (0) 7 58 80 94 72
               </li>
               <li class="list-group-item">
-                <span class="fw-bold">téléphone : </span> +33 (0) 7 53 03 91 12
+                <span class="fw-bold">Téléphone : </span> +33 (0) 7 53 03 91 12
               </li>
               <li class="list-group-item">
-                <span class="fw-bold">e-mail : </span>
+                <span class="fw-bold">Email : </span>
                 shikhomariage@gmail.com
               </li>
             </ul>

@@ -145,3 +145,9 @@ p {
     transition: all 0.3s;
   }
 }
+
+/* pour le textbox de modal, grandir */
+#message-text {
+  width: 100%; /* Vous pouvez ajuster cette valeur selon vos besoins */
+  min-height: 250px; /* Ajuste la hauteur minimale */
+}
