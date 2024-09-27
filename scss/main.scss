@@ -59,6 +59,12 @@ footer.footer {
 p {
   font-family: $font-family-sans-serif;
   font-size: 18px;
+  text-align: justify;
+}
+h2,
+h3,
+h4 {
+  font-family: $font-family-sans-serif;
 }
 
 //
@@ -114,11 +120,15 @@ p {
 
 .questions-section {
   margin-bottom: 10px; /* Ajustez cette valeur selon le besoin */
+  font-family: $font-family-sans-serif;
+  font-size: 18px;
+  text-align: justify;
 }
 
 #contact-section {
-  margin-top: 10px; /* Ajustez cette valeur pour réduire l'espace */
+  margin-top: 12px; /* Ajustez cette valeur pour réduire l'espace */
   margin-bottom: 20px; /* Ajustez si nécessaire */
+  font-family: $font-family-sans-serif;
 }
 
 /* Styles pour le image de galery */
@@ -146,7 +156,7 @@ p {
   }
 }
 
-/* pour le textbox de modal, grandir */
+/* CSS pour le textbox de modal, grandir */
 #message-text {
   width: 100%; /* Vous pouvez ajuster cette valeur selon vos besoins */
   min-height: 250px; /* Ajuste la hauteur minimale */
