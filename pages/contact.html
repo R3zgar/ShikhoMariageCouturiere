@@ -1,5 +1,5 @@
 <!-- Contact 5 - Bootstrap Brain Component -->
-<section class="py-3 py-md-5 py-xl-8 bg-primary">
+<section class="py-2 py-md-5 py-xl-8 bg-primary">
   <div class="container p-4">
     <h2 class="text-center text-dark">
       <br />
@@ -24,36 +24,38 @@
           <form action="#!">
             <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
               <div class="col-12 col-md-6">
-                <label for="last-name" class="form-label"
+                <label for="nomInput" class="form-label"
                   >Nom : <span class="text-danger">*</span></label
                 >
                 <input
                   type="text"
                   class="form-control"
-                  id="last-name"
-                  name="last-name"
+                  id="nomInput"
+                  name="nomInput"
                   value=""
                   required
-                  placeholder="DUPONT"
+                  placeholder="Votre nom"
                 />
+                <div class="invalid-feedback">Le nom est requis</div>
               </div>
               <div class="col-12 col-md-6">
-                <label for="first-name" class="form-label"
+                <label for="prenomInput" class="form-label"
                   >Prénom : <span class="text-danger">*</span></label
                 >
                 <input
                   type="text"
                   class="form-control"
-                  id="first-name"
-                  name="first-name"
+                  id="prenomInput"
+                  name="prenomInput"
                   value=""
                   required
-                  placeholder="Emma"
+                  placeholder="Votre prénom"
                 />
+                <div class="invalid-feedback">Le prénom est requis</div>
               </div>
 
               <div class="col-12 col-md-6">
-                <label for="email" class="form-label"
+                <label for="emailInput" class="form-label"
                   >Email : <span class="text-danger">*</span></label
                 >
                 <div class="input-group">
@@ -74,16 +76,21 @@
                   <input
                     type="email"
                     class="form-control"
-                    id="email"
-                    name="email"
+                    id="emailInput"
+                    name="emailInput"
                     value=""
                     required
-                    placeholder="emma-dupont@gmail.com"
+                    placeholder="Votre email"
                   />
+                  <div class="invalid-feedback">
+                    Le mail n'est pas au bon format
+                  </div>
                 </div>
               </div>
               <div class="col-12 col-md-6">
-                <label for="phone" class="form-label">Téléphone :</label>
+                <label for="telephoneInput" class="form-label"
+                  >Téléphone :</label
+                >
                 <div class="input-group">
                   <span class="input-group-text bg-body">
                     <svg
@@ -102,43 +109,49 @@
                   <input
                     type="tel"
                     class="form-control"
-                    id="phone"
-                    name="phone"
+                    id="telephoneInput"
+                    name="telephoneInput"
                     value=""
-                    placeholder="07 12 34 56 78"
+                    placeholder="Votre Numéro de Téléphone"
                   />
                 </div>
               </div>
               <div class="col-12">
-                <label for="subject" class="form-label"
+                <label for="objetInput" class="form-label"
                   >Objet : <span class="text-danger">*</span></label
                 >
                 <input
                   type="text"
                   class="form-control"
-                  id="subject"
-                  name="subject"
+                  id="objetInput"
+                  name="objetInput"
                   value=""
                   required
-                  placeholder="Prendre un rendez-vous ..."
+                  placeholder="Écrivez un objet"
                 />
+                <div class="invalid-feedback">L'objet est requis</div>
               </div>
               <div class="col-12">
-                <label for="message" class="form-label"
+                <label for="messageInput" class="form-label"
                   >Message : <span class="text-danger">*</span></label
                 >
                 <textarea
                   class="form-control"
-                  id="message"
-                  name="message"
-                  rows="8"
+                  id="messageInput"
+                  name="messageInput"
+                  rows="10"
                   required
                   placeholder="Veuillez entrer votre message ici ..."
                 ></textarea>
+                <div class="invalid-feedback">Le message est requis</div>
               </div>
               <div class="col-12">
                 <div class="d-grid">
-                  <button class="btn btn-dark btn-lg" type="button">
+                  <button
+                    id="btn-envoyer"
+                    class="btn btn-dark btn-lg"
+                    type="submit"
+                  >
                     Envoyer
                   </button>
                 </div>
