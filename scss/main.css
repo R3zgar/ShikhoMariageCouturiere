@@ -12121,4 +12121,14 @@ address {
 #message-text {
   width: 100%; /* Vous pouvez ajuster cette valeur selon vos besoins */
   min-height: 250px; /* Ajuste la hauteur minimale */
+}
+
+label,
+input,
+button {
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  color: rgb(7, 0, 0);
 }/*# sourceMappingURL=main.css.map */
