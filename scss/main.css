@@ -12098,7 +12098,6 @@ address {
 /* Styles pour le image de galery */
 .image-card {
   position: relative;
-  /* CSS pour le textbox de modal, grandir */
 }
 .image-card:hover .titre-image,
 .image-card:hover .action-image-buttons {
@@ -12136,15 +12135,23 @@ address {
 .image-card:hover .image-card .action-image-buttons button i {
   color: transparent; /* Rendre les icônes transparentes au survol */
 }
-.image-card #message-text {
+
+/* CSS pour le textbox de modal, grandir */
+#message-text {
   width: 100%; /* Vous pouvez ajuster cette valeur selon vos besoins */
   min-height: 250px; /* Ajuste la hauteur minimale */
 }
-.image-card label,
-.image-card input,
-.image-card button {
+
+label,
+input,
+button {
   font-family: "Lato", sans-serif;
 }
-.image-card a {
+
+a {
   color: rgb(7, 0, 0);
+}
+
+.allCommandes img {
+  width: 150px;
 }/*# sourceMappingURL=main.css.map */
