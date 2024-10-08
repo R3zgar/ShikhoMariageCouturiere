@@ -13,29 +13,45 @@
       plus précieux
     </p>
 
+    <div class="text-center">
+      <button class="btn btn-lg btn-light" data-bs-toggle="modal" data-bs-target="#PhotoEditModal"><i class="bi bi-image" ></i>  Ajouter une photo</button>
+    </div>
+
+    <br>
+
     <!-- Mon Essai -->
 
     <div class="container">
       <div class="row row-cols-2 row-cols-lg-4">
         <div class="col p-3">
-          <div class="image-card text-white">
+        <div class="image-card text-white position-relative">
+
             <img
               src="../images/113.gif"
               class="rounded w-100"
               alt="le-robe-de-mariage-numero-113"
             />
             <p class="titre-image">N° 113</p>
+
+            <div class="action-image-buttons">
+              <button type="button" class="btn btn-inline-light left-button btn-lg" data-bs-toggle="modal" data-bs-target="#PhotoEditModal" data-bs-toggle="tooltip" title="Modifier la photo"><i class="bi bi-pencil-square"></i></button>
+              <button type="button" class="btn btn-inline-light right-button btn-lg" data-bs-toggle="modal" data-bs-target="#PhotoDeleteModal" data-bs-toggle="tooltip" title="Supprimer la photo"><i class="bi bi-trash"></i></button>
+            </div>
+
           </div>
         </div>
 
         <div class="col p-3">
           <div class="image-card text-white">
+
             <img
               src="../images/201.gif"
               class="rounded w-100"
               alt="le-robe-de-mariage-numero-201"
             />
+
             <p class="titre-image">N° 201</p>
+
           </div>
         </div>
 
@@ -207,3 +223,53 @@
     </div>
   </div>
 </section>
+
+<!-- Modal #PhotoEditModal -->
+<div class="modal fade" id="PhotoEditModal" tabindex="-1" aria-labelledby="PhotoEditModalLabel" aria-hidden="true">
+  <div class="modal-dialog ">
+    <div class="modal-content  bg-light">
+      <div class="modal-header">
+        <h2 class="modal-title fs-5" id="PhotoEditModalLabel">Modification d'image</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+             <label for="PhotoNameInput" class="form-label">Description de l'image</label>
+             <input type="text" class="form-control bg-light" id="PhotoNameInput" placeholder="La robe de mariage N 113">
+          </div>
+              <div class="mb-3">
+                 <label for="ImageInput" class="form-label">Image</label>
+                 <input type="file" class="form-control bg-light mb-5" id="ImageInput">
+              </div>
+              <div class="text-center"> <button type="button" class="btn btn-dark btn-lg mb-4"> Confirmer</button>
+              </div>          
+      </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal #PhotoDeleteModal -->
+<div class="modal fade" id="PhotoDeleteModal" tabindex="-1" aria-labelledby="PhotoDeleteModalLabel" aria-hidden="true">
+  <div class="modal-dialog ">
+    <div class="modal-content  bg-light">
+      <div class="modal-header">
+        <h2 class="modal-title fs-5" id="PhotoDeleteModalLabel">Voulez-vous confirmer la suppression de cette image ?</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+             <p>Description de l'image</p>
+             <img src="../images/113.gif" class="rounded w-100"/>
+            </div>
+              <div class="modal-footer"> 
+                <button type="button" class="btn btn-secondary mb-4" data-bs-dismiss="modal"> Annuler</button>
+               <button type="button" class="btn btn-danger mb-4"> Supprimer</button>
+              </div>          
+      </form>
+      </div>
+    </div>
+  </div>
+</div>

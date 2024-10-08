@@ -12098,8 +12098,10 @@ address {
 /* Styles pour le image de galery */
 .image-card {
   position: relative;
+  /* CSS pour le textbox de modal, grandir */
 }
-.image-card:hover .titre-image {
+.image-card:hover .titre-image,
+.image-card:hover .action-image-buttons {
   opacity: 1;
 }
 .image-card:hover img {
@@ -12116,19 +12118,33 @@ address {
   opacity: 0;
   transition: all 0.3s;
 }
-
-/* CSS pour le textbox de modal, grandir */
-#message-text {
+.image-card .action-image-buttons {
+  position: absolute; /* Positionnement absolu par rapport à .image-card */
+  bottom: 10px; /* Positionner les boutons en bas de l'image */
+  left: 20px; /* Positionner à gauche */
+  width: 80%;
+  display: flex;
+  justify-content: space-between; /* Espace entre les boutons */
+  opacity: 0; /* Visible par défaut */
+  transition: opacity 0.3s; /* Transition pour l'opacité des boutons */
+  /* Rendre les icônes transparentes au survol de l'image */
+}
+.image-card .action-image-buttons button i {
+  color: white; /* Couleur initiale des icônes (blanche) */
+  transition: color 0.3s; /* Transition pour la couleur des icônes */
+}
+.image-card:hover .image-card .action-image-buttons button i {
+  color: transparent; /* Rendre les icônes transparentes au survol */
+}
+.image-card #message-text {
   width: 100%; /* Vous pouvez ajuster cette valeur selon vos besoins */
   min-height: 250px; /* Ajuste la hauteur minimale */
 }
-
-label,
-input,
-button {
+.image-card label,
+.image-card input,
+.image-card button {
   font-family: "Lato", sans-serif;
 }
-
-a {
+.image-card a {
   color: rgb(7, 0, 0);
 }/*# sourceMappingURL=main.css.map */

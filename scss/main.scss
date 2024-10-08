@@ -136,8 +136,10 @@ address {
 .image-card {
   position: relative;
   &:hover {
-    .titre-image {
+    .titre-image,
+    .action-image-buttons {
       opacity: 1;
+      
     }
     img {
       filter: brightness(0.3);
@@ -154,7 +156,31 @@ address {
     transform: translate(-50%, -50%);
     opacity: 0;
     transition: all 0.3s;
+
   }
+
+  .action-image-buttons {
+    position: absolute; /* Positionnement absolu par rapport à .image-card */
+    bottom: 10px; /* Positionner les boutons en bas de l'image */
+    left: 20px; /* Positionner à gauche */
+    width: 80%;
+    display: flex;
+    justify-content: space-between; /* Espace entre les boutons */
+    opacity: 0; /* Visible par défaut */
+    transition: opacity 0.3s; /* Transition pour l'opacité des boutons */
+
+    button i {
+      color: white; /* Couleur initiale des icônes (blanche) */
+      transition: color 0.3s; /* Transition pour la couleur des icônes */
+    }
+
+    /* Rendre les icônes transparentes au survol de l'image */
+    .image-card:hover & button i {
+      color: transparent; /* Rendre les icônes transparentes au survol */
+
+
+  }
+
 }
 
 /* CSS pour le textbox de modal, grandir */
@@ -171,4 +197,6 @@ button{
 
 a{
   color:rgb(7, 0, 0);
+}
+
 }
