@@ -12075,47 +12075,4 @@ p {
   transform: translate(-50%, -50%);
   opacity: 0;
   transition: all 0.3s;
-<<<<<<< HEAD
 }
-.image-card .action-image-buttons {
-  position: absolute; /* Positionnement absolu par rapport à .image-card */
-  bottom: 10px; /* Positionner les boutons en bas de l'image */
-  left: 20px; /* Positionner à gauche */
-  width: 80%;
-  display: flex;
-  justify-content: space-between; /* Espace entre les boutons */
-  opacity: 0; /* Visible par défaut */
-  transition: opacity 0.3s; /* Transition pour l'opacité des boutons */
-  /* Rendre les icônes transparentes au survol de l'image */
-}
-.image-card .action-image-buttons button i {
-  color: white; /* Couleur initiale des icônes (blanche) */
-  transition: color 0.3s; /* Transition pour la couleur des icônes */
-}
-.image-card:hover .image-card .action-image-buttons button i {
-  color: transparent; /* Rendre les icônes transparentes au survol */
-}
-
-/* CSS pour le textbox de modal, grandir */
-#message-text {
-  width: 100%; /* Vous pouvez ajuster cette valeur selon vos besoins */
-  min-height: 250px; /* Ajuste la hauteur minimale */
-}
-
-label,
-input,
-button {
-  font-family: "Lato", sans-serif;
-}
-
-a {
-  color: rgb(7, 0, 0);
-}
-
-.allCommandes img {
-  width: 150px;
-}/*# sourceMappingURL=main.css.map */
-=======
-}/*# sourceMappingURL=main.css.map */
-
->>>>>>> 4f674eb (change the files and the best performance and the best reoutuche befor uplouding the webstie in the server)

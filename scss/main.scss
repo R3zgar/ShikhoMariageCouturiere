@@ -133,10 +133,8 @@ p {
   position: relative;
 
   &:hover {
-    .titre-image,
-    .action-image-buttons {
+    .titre-image {
       opacity: 1;
-      
     }
     img {
       filter: brightness(0.3); // Assombrit l'image au survol
@@ -153,11 +151,6 @@ p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-<<<<<<< HEAD
-    opacity: 0;
-    transition: all 0.3s;
-
-=======
     opacity: 0; // Caché par défaut
     transition: all 0.3s; // Animation fluide
   }
@@ -211,32 +204,7 @@ p {
   }
   #carouselExampleSlidesOnly .carousel-inner img {
     max-height: 400px; /* Réduit davantage la hauteur des images */
->>>>>>> 4f674eb (change the files and the best performance and the best reoutuche befor uplouding the webstie in the server)
   }
-
-  .action-image-buttons {
-    position: absolute; /* Positionnement absolu par rapport à .image-card */
-    bottom: 10px; /* Positionner les boutons en bas de l'image */
-    left: 20px; /* Positionner à gauche */
-    width: 80%;
-    display: flex;
-    justify-content: space-between; /* Espace entre les boutons */
-    opacity: 0; /* Visible par défaut */
-    transition: opacity 0.3s; /* Transition pour l'opacité des boutons */
-
-    button i {
-      color: white; /* Couleur initiale des icônes (blanche) */
-      transition: color 0.3s; /* Transition pour la couleur des icônes */
-    }
-
-    /* Rendre les icônes transparentes au survol de l'image */
-    .image-card:hover & button i {
-      color: transparent; /* Rendre les icônes transparentes au survol */
-
-
-  }
-
-}
 }
 
 .carousel-link {
@@ -244,25 +212,6 @@ p {
   text-decoration: none; /* Supprime le soulignement du lien */
 }
 
-<<<<<<< HEAD
-label,
-input,
-button{
-  font-family: $font-family-sans-serif;
-}
-
-a{
-  color:rgb(7, 0, 0);
-}
-
-.allCommandes{
-  img{
-    width: 150px;
-  }
-}
-=======
 .carousel-link:hover {
   cursor: pointer; /* Change le curseur lorsque l'utilisateur survole le carrousel */
 }
-
->>>>>>> 4f674eb (change the files and the best performance and the best reoutuche befor uplouding the webstie in the server)
