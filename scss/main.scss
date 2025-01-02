@@ -1,77 +1,85 @@
+// Importation des icônes Bootstrap
+@import url("/node_modules/bootstrap-icons/font/bootstrap-icons.css");
+
+// Importation des variables personnalisées
+@import "custom";
+
+// Corps et structure de base
+html,
+body {
+  height: 100%; // Assure que le contenu remplit la fenêtre
+  margin: 0; // Supprime les marges par défaut
+  font-family: $font-family-sans-serif; // Police secondaire par défaut
+  font-size: 16px; // Taille de police par défaut
+  background-color: $body-bg; // Couleur de fond
+}
+
 body::before {
   display: block;
   content: "";
-  height: 60px;
-}
-
-@import url("/node_modules/bootstrap-icons/font/bootstrap-icons.css");
-@import "custom";
-
-html,
-body {
-  height: 100%;
-  margin: 0;
+  height: 60px; // Espace réservé pour le header fixe
 }
 
 .wrapper {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Assurez-vous que le wrapper remplit la fenêtre */
+  min-height: 100vh; // Permet de remplir toute la hauteur de la fenêtre
 }
 
 header {
-  position: fixed; /* Fixe le menu en haut de la page */
+  position: fixed; // Fixe le menu en haut
   top: 0;
   width: 100%;
-  z-index: 1000; /* S'assurer qu'il soit au-dessus du contenu */
+  z-index: 1000; // Assure qu'il reste au-dessus du contenu
 }
 
 .content {
-  flex: 1; /* Permet au contenu de prendre l'espace disponible */
-  padding-top: 60px; /* Évite que le contenu soit masqué sous le menu */
+  flex: 1; // Permet au contenu principal de prendre tout l'espace disponible
+  padding-top: 60px; // Évite que le contenu soit masqué sous le menu
 }
 
 footer {
   padding: 15px;
-  width: 100%;
   background-color: #f8f9fa; /* Couleur de fond pour le footer */
   text-align: center; /* Centrer le texte */
-  margin-top: auto; /* Assure que le footer soit en bas de la page */
-  position: relative; /* Cela peut être nécessaire selon votre structure */
-}
-
-html {
+  margin-top: auto; /* Place le footer en bas */
   position: relative;
-  min-height: 100%;
+
+  p {
+    font-size: 0.9rem; /* Réduit la taille des textes à 14.4px */
+    line-height: 1.5; /* Améliore la lisibilité */
+    font-family: $font-family-sans-serif; /* Police secondaire */
+  }
+
+  a {
+    font-size: 0.85rem; /* Réduit la taille des liens */
+  }
 }
 
-main {
-  margin-bottom: 150px;
+// Responsive: petits écrans
+@media (max-width: 768px) {
+  footer {
+    p {
+      font-size: 0.8rem; /* Réduit encore plus pour les écrans mobiles */
+    }
+    a {
+      font-size: 0.75rem; /* Taille plus petite pour les liens */
+    }
+  }
 }
 
-footer.footer {
-  padding: 15px;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
 
+
+// Styles pour les paragraphes
 p {
-  font-family: $font-family-sans-serif;
-  font-size: 18px;
-  text-align: justify;
-}
-h2,
-h3,
-h4,
-address {
-  font-family: $font-family-sans-serif;
+  font-family: $font-family-sans-serif; // Police secondaire
+  font-size: 1rem; // Taille de base (16px)
+  text-align: justify; // Alignement justifié
 }
 
-//
-
+// Google Map
 .google-map {
-  padding-bottom: 50%;
+  padding-bottom: 50%; // Maintient le ratio
   position: relative;
 }
 
@@ -80,61 +88,50 @@ address {
   width: 100%;
   left: 0;
   top: 0;
-  position: absolute;
-  border-radius: 10px;
+  position: absolute; // Fixe l'iframe à l'intérieur de son conteneur
+  border-radius: 10px; // Coins arrondis pour une meilleure esthétique
 }
 
-@media (min-width: 768px) {
+// Responsive (petits écrans)
+@media (max-width: 768px) {
   .news-input {
-    width: 50%;
+    width: 100%; // Pleine largeur pour les petits écrans
   }
 }
-//
 
-.equal-height {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.equal-height .card-body {
-  flex: 1;
-}
-
-// les instructor de images
-
+// Images des instructeurs
 .instructor-img {
-  width: 250px;
-  height: 350px;
-  object-fit: cover;
-  border-radius: 10px !important;
+  width: 220px; // Largeur fixe
+  height: 330px; // Hauteur fixe
+  object-fit: cover; // Ajuste l'image pour remplir l'espace
+  border-radius: 10px !important; // Coins arrondis
 }
 
-/* Style pour les etoiles */
+// Effets pour les étoiles
 .stars {
-  font-size: 1rem; /* Adjusted to make stars smaller */
+  font-size: 1rem; // Taille standard des étoiles
+  i {
+    margin: 0 2px; // Espacement entre les icônes d'étoiles
+  }
 }
 
-.stars i {
-  margin: 0 2px;
-}
-
+// Section des questions fréquentes
 .questions-section {
-  margin-bottom: 10px; /* Ajustez cette valeur selon le besoin */
-  font-family: $font-family-sans-serif;
-  font-size: 18px;
-  text-align: justify;
+  margin-bottom: 10px; // Espacement inférieur
+  font-family: $font-family-sans-serif; // Police secondaire
+  font-size: 1rem; // Taille standard
+  text-align: justify; // Alignement justifié
 }
 
-#contact-section {
-  margin-top: 12px; /* Ajustez cette valeur pour réduire l'espace */
-  margin-bottom: 20px; /* Ajustez si nécessaire */
-  font-family: $font-family-sans-serif;
+.image-card img {
+  cursor: pointer;
 }
 
-/* Styles pour le image de galery */
+
+// Effets pour les images de la galerie
 .image-card {
   position: relative;
+
   &:hover {
     .titre-image,
     .action-image-buttons {
@@ -142,11 +139,13 @@ address {
       
     }
     img {
-      filter: brightness(0.3);
+      filter: brightness(0.3); // Assombrit l'image au survol
+
     }
   }
+
   img {
-    transition: all 0.3s;
+    transition: all 0.3s; // Animation fluide
   }
 
   .titre-image {
@@ -154,9 +153,65 @@ address {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+<<<<<<< HEAD
     opacity: 0;
     transition: all 0.3s;
 
+=======
+    opacity: 0; // Caché par défaut
+    transition: all 0.3s; // Animation fluide
+  }
+  
+}
+
+
+
+
+
+
+/* Styles pour le modal */
+.modal-content {
+  background-color: #eeddcc86; /* Fond sombre */
+  border: none; /* Supprime les bordures */
+}
+
+.modal-body img {
+  max-height: 80vh; /* Limite la hauteur de l'image */
+  object-fit: contain; /* Ajuste l'image sans la déformer */
+}
+
+/* Effets des boutons de navigation */
+.btn-outline-light {
+  opacity: 0.8; /* Rendre les boutons légèrement transparents */
+  transition: opacity 0.3s; /* Animation fluide */
+}
+
+.btn-outline-light:hover {
+  opacity: 1; /* Rendre les boutons entièrement visibles */
+}
+
+
+
+
+/* Réduction de la taille du carrousel */
+#carouselExampleSlidesOnly {
+  max-width: 80%; /* Réduit la largeur à 50% */
+  margin: 0 auto; /* Centre le carrousel */
+}
+
+#carouselExampleSlidesOnly .carousel-inner img {
+  max-height: 600px; /* Limite la hauteur des images */
+  object-fit: cover; /* Assure que les images ne sont pas déformées */
+}
+
+/* Responsive pour les petits écrans */
+@media (max-width: 768px) {
+  #carouselExampleSlidesOnly {
+    max-width: 80%; /* Ajuste la largeur sur les petits écrans */
+  }
+  #carouselExampleSlidesOnly .carousel-inner img {
+    max-height: 400px; /* Réduit davantage la hauteur des images */
+>>>>>>> 4f674eb (change the files and the best performance and the best reoutuche befor uplouding the webstie in the server)
   }
 
   .action-image-buttons {
@@ -184,12 +239,12 @@ address {
 }
 }
 
-/* CSS pour le textbox de modal, grandir */
-#message-text {
-  width: 100%; /* Vous pouvez ajuster cette valeur selon vos besoins */
-  min-height: 250px; /* Ajuste la hauteur minimale */
+.carousel-link {
+  display: block; /* Rend le lien cliquable pour toute la zone du carrousel */
+  text-decoration: none; /* Supprime le soulignement du lien */
 }
 
+<<<<<<< HEAD
 label,
 input,
 button{
@@ -205,3 +260,9 @@ a{
     width: 150px;
   }
 }
+=======
+.carousel-link:hover {
+  cursor: pointer; /* Change le curseur lorsque l'utilisateur survole le carrousel */
+}
+
+>>>>>>> 4f674eb (change the files and the best performance and the best reoutuche befor uplouding the webstie in the server)

@@ -1,11 +1,5 @@
 @charset "UTF-8";
 @import url("/node_modules/bootstrap-icons/font/bootstrap-icons.css");
-body::before {
-  display: block;
-  content: "";
-  height: 60px;
-}
-
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
@@ -11976,64 +11970,48 @@ html,
 body {
   height: 100%;
   margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  background-color: #faf3f3;
+}
+
+body::before {
+  display: block;
+  content: "";
+  height: 60px;
 }
 
 .wrapper {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Assurez-vous que le wrapper remplit la fenêtre */
+  min-height: 100vh;
 }
 
 header {
-  position: fixed; /* Fixe le menu en haut de la page */
+  position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1000; /* S'assurer qu'il soit au-dessus du contenu */
+  z-index: 1000;
 }
 
 .content {
-  flex: 1; /* Permet au contenu de prendre l'espace disponible */
-  padding-top: 60px; /* Évite que le contenu soit masqué sous le menu */
+  flex: 1;
+  padding-top: 60px;
 }
 
 footer {
   padding: 15px;
   width: 100%;
-  background-color: #f8f9fa; /* Couleur de fond pour le footer */
-  text-align: center; /* Centrer le texte */
-  margin-top: auto; /* Assure que le footer soit en bas de la page */
-  position: relative; /* Cela peut être nécessaire selon votre structure */
-}
-
-html {
+  background-color: #f8f9fa;
+  text-align: center;
+  margin-top: auto;
   position: relative;
-  min-height: 100%;
-}
-
-main {
-  margin-bottom: 150px;
-}
-
-footer.footer {
-  padding: 15px;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
 }
 
 p {
   font-family: "Lato", sans-serif;
-  font-size: 18px;
+  font-size: 1rem;
   text-align: justify;
-}
-
-h2, .h2,
-h3,
-.h3,
-h4,
-.h4,
-address {
-  font-family: "Lato", sans-serif;
 }
 
 .google-map {
@@ -12050,21 +12028,11 @@ address {
   border-radius: 10px;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .news-input {
-    width: 50%;
+    width: 100%;
   }
 }
-.equal-height {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.equal-height .card-body {
-  flex: 1;
-}
-
 .instructor-img {
   width: 250px;
   height: 350px;
@@ -12073,29 +12041,20 @@ address {
   border-radius: 10px !important;
 }
 
-/* Style pour les etoiles */
 .stars {
-  font-size: 1rem; /* Adjusted to make stars smaller */
+  font-size: 1rem;
 }
-
 .stars i {
   margin: 0 2px;
 }
 
 .questions-section {
-  margin-bottom: 10px; /* Ajustez cette valeur selon le besoin */
+  margin-bottom: 10px;
   font-family: "Lato", sans-serif;
-  font-size: 18px;
+  font-size: 1rem;
   text-align: justify;
 }
 
-#contact-section {
-  margin-top: 12px; /* Ajustez cette valeur pour réduire l'espace */
-  margin-bottom: 20px; /* Ajustez si nécessaire */
-  font-family: "Lato", sans-serif;
-}
-
-/* Styles pour le image de galery */
 .image-card {
   position: relative;
 }
@@ -12116,6 +12075,7 @@ address {
   transform: translate(-50%, -50%);
   opacity: 0;
   transition: all 0.3s;
+<<<<<<< HEAD
 }
 .image-card .action-image-buttons {
   position: absolute; /* Positionnement absolu par rapport à .image-card */
@@ -12155,3 +12115,7 @@ a {
 .allCommandes img {
   width: 150px;
 }/*# sourceMappingURL=main.css.map */
+=======
+}/*# sourceMappingURL=main.css.map */
+
+>>>>>>> 4f674eb (change the files and the best performance and the best reoutuche befor uplouding the webstie in the server)

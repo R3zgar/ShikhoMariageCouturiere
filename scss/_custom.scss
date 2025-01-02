@@ -1,17 +1,21 @@
-// Custom.scss
-// Option A: Include all of Bootstrap
+// Variables personnalisées pour Bootstrap
+$primary: #fad1d8; // Couleur principale avec un bon contraste
+$secondary: #9e899d; // Couleur secondaire
+$body-bg: #faf3f3; // Couleur de fond du site
+$dark: #12100f; // Couleur pour les textes sombres
+$les-cartes: #eeddcc; // Couleur pour les cartes
+$les-textes-white: #ffffff; // Couleur pour les textes blancs
 
-// Include any default variable overrides here (though functions won't be available)
+$font-family-base: "Frank Ruhl Libre", serif !important; // Police principale
+$font-family-sans-serif: "Lato", sans-serif !default; // Police secondaire
 
-$primary: #fad1d8;
-$secondary: #9e899d;
-$body-bg: #faf3f3;
-$dark: #12100f;
-$les-cartes: #eeddcc;
-$les-textes-white: #ffffff;
-$font-family-base: "Frank Ruhl Libre", serif !important;
-$font-family-sans-serif: "Lato", sans-serif !default;
+$font-weight-regular: 400; // Poids régulier
+$font-weight-bold: 700; // Poids gras
 
-@import "../node_modules/bootstrap/scss/bootstrap";
+// Inclusion sélective de Bootstrap pour réduire la taille
+@import "../node_modules/bootstrap/scss/_variables";
+@import "../node_modules/bootstrap/scss/_reboot";
+@import "../node_modules/bootstrap/scss/_buttons";
+@import "../node_modules/bootstrap/scss/_utilities";
 
-// Then add additional custom code here
+// Ajout de styles personnalisés ici si nécessaire
