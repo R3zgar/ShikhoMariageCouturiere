@@ -190,11 +190,13 @@ p {
 #carouselExampleSlidesOnly {
   max-width: 80%; /* Réduit la largeur à 50% */
   margin: 0 auto; /* Centre le carrousel */
+  overflow: hidden;
 }
 
 #carouselExampleSlidesOnly .carousel-inner img {
   max-height: 600px; /* Limite la hauteur des images */
   object-fit: cover; /* Assure que les images ne sont pas déformées */
+  display: block;
 }
 
 /* Responsive pour les petits écrans */
