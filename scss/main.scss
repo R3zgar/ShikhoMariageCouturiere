@@ -217,3 +217,13 @@ p {
 .carousel-link:hover {
   cursor: pointer; /* Change le curseur lorsque l'utilisateur survole le carrousel */
 }
+
+/* Style pour l'option placeholder du select */
+select.form-select:invalid {
+  color: #7a7b7c; // Gris Bootstrap (placeholder)
+}
+
+/* Force le style pour la première option qui agit comme un placeholder */
+select.form-select option[disabled][selected] {
+  color: #7b7b7b;
+}

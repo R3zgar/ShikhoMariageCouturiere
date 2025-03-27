@@ -121,9 +121,22 @@
                     id="telephoneInput"
                     name="telephone"
                     value=""
-                    placeholder="Votre Numéro de Téléphone"
+                    placeholder="Téléphone"
                   />
                 </div>
+              </div>
+
+              <!-- Selection boutiques -->
+              <div class="col-12">
+                <label for="boutiqueSelect" class="form-label">
+                  Les boutiques : <span class="text-danger">*</span>
+                </label>
+                <select class="form-select" id="boutiqueSelect" name="boutique" required>
+                  <option value="" disabled selected>Veuillez sélectionner une boutique</option>
+                  <option value="Agen">Agen</option>
+                  <option value="Strasbourg">Strasbourg</option>
+                </select>
+                <div class="invalid-feedback">La sélection de la boutique est obligatoire</div>
               </div>
 
               <!-- Objet -->
@@ -204,7 +217,7 @@
                 </p>
                 <hr class="w-50 mb-4 border-dark-subtle" />
                 <address class="m-0 text-secondary">
-                  <strong class="text-primary-emphasis">Agen: </strong> 3 Boulevard de la République - Agen(47000) <br>
+                  <strong class="text-primary-emphasis">Agen: </strong> 13 Boulevard de la République - Agen(47000) <br>
                 </address>
                 <hr class="w-70 m-2 border-dark-subtle" />
                 <address class="m-0 text-secondary">
@@ -319,11 +332,11 @@
                 <p class="mb-2">Découvrez nos heures d'ouverture.</p>
                 <hr class="w-0 mb-4 border-dark-subtle" />
                 <div class="d-flex mb-2">
-                  <p class="text-secondary fw-bold mb-0 me-5">Lun. - Sam. :</p>
+                  <p class="text-secondary fw-bold mb-0 me-5">Mar. - Sam. :</p>
                   <p class="text-secondary mb-0">10:00 - 18:00</p>
                 </div>
                 <div class="d-flex">
-                  <p class="text-secondary fw-bold mb-0 me-5">Dim. :</p>
+                  <p class="text-secondary fw-bold mb-0 me-5">Dim. et Lun :</p>
                   <p class="text-secondary mb-0">Fermé</p>
                 </div>
               </div>

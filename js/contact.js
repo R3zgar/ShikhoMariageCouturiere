@@ -13,6 +13,7 @@ const inputNom = document.getElementById("nomInput");
 const inputPreNom = document.getElementById("prenomInput");
 const inputEmail = document.getElementById("emailInput");
 const inputTelephone = document.getElementById("telephoneInput");
+const selectBoutique = document.getElementById("boutiqueSelect");
 const inputObjet = document.getElementById("objetInput");
 const inputMessage = document.getElementById("messageInput");
 const btnEnvoyer = document.getElementById("btn-envoyer");
@@ -27,6 +28,7 @@ inputNom.addEventListener("keyup", validateForm);
 inputPreNom.addEventListener("keyup", validateForm);
 inputEmail.addEventListener("keyup", validateForm);
 inputTelephone.addEventListener("keyup", validateForm);
+selectBoutique.addEventListener("change", validateForm);
 inputObjet.addEventListener("keyup", validateForm);
 inputMessage.addEventListener("keyup", validateForm);
 
@@ -35,11 +37,12 @@ function validateForm() {
   const nomOk = validateRequired(inputNom);
   const prenomOk = validateRequired(inputPreNom);
   const mailOk = validateMail(inputEmail);
+  const selectOk = validateRequired(selectBoutique);
   const objetOk = validateRequired(inputObjet);
   const messageOk = validateRequired(inputMessage);
 
   // Si tous les champs sont valides, activer le bouton "Envoyer"
-  if (nomOk && prenomOk && mailOk && objetOk && messageOk) {
+  if (nomOk && prenomOk && mailOk && selectOk && objetOk && messageOk) {
     btnEnvoyer.disabled = false;
   } else {
     btnEnvoyer.disabled = true;
@@ -54,8 +57,14 @@ function validateForm() {
  */
 
 function validateRequired(input) {
-  if (input.value.trim() != "") {
-    
+
+  if (input.tagName === "SELECT" && input.value === "") {
+    input.classList.remove("is-valid");
+    input.classList.add("is-invalid");
+    return false;
+  }
+
+  if (input.value.trim() != "") {   
     // Champ valide
     input.classList.add("is-valid");
     input.classList.remove("is-invalid");
