@@ -1,1 +1,10 @@
-node_modules
+# Dépendances
+node_modules/
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Configuration des IDE
+.idea/
+.vscode/
